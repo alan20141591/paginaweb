@@ -1,0 +1,615 @@
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height:100%;
+        }
+        #wrapper {
+            min-height:100%;
+        }
+        header {
+            display:block;
+            background:#4C0B5F;
+            padding:10px 0px;
+        }
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 60px;
+            padding-top:30px;
+        }
+        footer {
+            position: relative;
+            margin-top: -50px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 50px; 
+            padding:5px 0px;
+            clear: both;
+            background: #4C0B5F;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .define {
+            width:960px;
+            margin:0 auto;
+        }
+    </style>
+
+
+<style type="text/css">
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+  height: 10px;
+  width: 90%;
+  background-color: #4C0B5F;
+}
+#menu {
+    width: 90%;
+    margin: 40px auto;
+    border: 1px solid #222;
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 10px 10px #777;
+}
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu {
+    zoom:1;
+}
+#menu li {
+    float: left;
+    border-right: 1px solid #4C0B5F;
+    box-shadow: 1px 0 0 #4C0B5F;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #4C0B5F;
+}
+
+#menu li:hover > a {
+    color: #fafafa;
+}
+
+*html #menu li a:hover { /* IE6 only */
+    color: #4C0B5F;
+
+}#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #4C0B5F;   
+    background: linear-gradient(#4C0B5F, #4C0B5F);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+
+#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul ul li:first-child a:hover:after {
+    border-right-color: #4C0B5F; 
+    border-bottom-color: transparent;   
+}
+
+#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+	</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html> 
+<body>
+<ul id="menu">
+    <li><a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Inicio</a></li>
+    <li>
+        <a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Facultad de Telematica</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Historia.html">Historia</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Contacto.html">Contacto</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Personaladministrativo.html">Personal administrativo</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Reglamentolaboratorio.html">Reglamento Laboratorio</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Infraestructura.html">Infraestructura</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Oferta educativa</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Bienvenida.html">Bienvenida</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingsoftware.html">Ing. Software</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingtelematica.html">Ing. Telematica</a></li>
+        </ul></li>
+    <li><a href="#">Academico</a><ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Docentes.html">Docentes</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Academias.html">Academias</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Cuerposacademicos.html">Cuerpos academicos</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Programadetutoria.html">Programa de tutoria</a></li>
+        </ul></li>
+    <li><a href="#">Rendicion de cuentas</a>
+         <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Informesdelabores.html">Informes de labores</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Pide.html">Pide-2018-2021</a></li>
+        </ul>
+    </li>
+    <li><a href="http://telematicanet.ucol.mx/egresados/">Asociacion de Egresados</a></li>
+</ul>
+</body>
+<body>
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+.menu-inicio {color: #fff;margin: 2px 0 0 0; padding: 0;margin-top: 10px; background: #4C0B5F; display: block; border-radius: 4px; transition: all 0.5s ease;font-size: 15px; padding: 20px 0 10px 10px; border-radius: 4px; }
+.menu-inicio a{color: #fff;}
+.menu_body {width:90%;display:none;}
+.menu_body a{background: #7CC6FA; display: block; padding: 10px 0 10px 10px; font-size: 15px; outline: 0; border-radius: 4px; line-height: 26px;color: #fff;}
+.menu_body a:hover{
+background: #057ED5; color: #fff; ; display: block; border-radius: 4px;}
+</style>
+
+<div class="menu" id="amor">
+<center><p class="menu-inicio">Profesor de tiempo completo</a></p></center>
+
+
+
+
+<br><br><br>
+
+<center>
+<table summary=""cellspacing="4" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="1"  scope="col"> PhD. Acosta Díaz Ricardo<br>
+acosta@ucol.mx <br></th>
+
+
+<th scope="col">M. en C. Álvarez Cárdenas Omar<br>
+xe1aom@ucol.mx  <br><br></th>
+
+
+<th scope="col"> D. en C. Andrade Aréchiga María<br>
+mandrad@ucol.mx <br><br></th>
+
+
+<th scope="col"> D. en C. Aquino Santos Raúl Teodoro<br>
+aquinor@ucol.mx <br><br></th>
+
+
+</tr>
+    <tr>
+
+
+<th scope="col"> D. en C. Buenrostro Mariscal Raymundo<br>
+raymundo@ucol.mx <br><br></th>
+
+
+
+<th  scope="col">  D. en C. Cabello Espinosa María Eugenia<br>
+ecabello@ucol.mx<br><br></th>
+      
+
+
+<th scope="col">D. en C. Contreras Castillo Juan José<br>
+juancont@ucol.mx<br><br></th>
+
+
+
+<th  scope="col">D. en C. Damian Reyes Pedro<br>
+damian@ucol.mx<br><br></th>
+    
+
+
+</tr>
+  </thead>
+ <tr>
+<th  colspan="1" scope="col">  M. en C. Estrada González Fermín<br>
+fermin_estrada@ucol.mx <br><br></th>
+
+
+<th  scope="col"><br>D. en C. Fajardo Flores Silvia Berenice<br>
+medusa@ucol.mx<br></th>
+
+
+<th  scope="col"><br>D. en C. Flores Cortés Carlos Alberto<br>
+cfcortes@ucol.mx<br></th>
+
+
+<th  scope="col">M. en C. Gallardo Armando Román<br>
+aroman@ucol.mx<br><br></th>
+
+    </tr>
+</table>
+</center>
+<center>
+<table summary=""cellspacing="4" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+<th colspan="1"  scope="col"> D. en C. Guerrero Ibáñez Juan Antonio<br>
+antonio_guerrero@ucol.mx <br></th>
+
+<th  scope="col">D. en C. Gutiérrez Pulido Jorge Rafael<br>
+jrgp@ucol.mx<br><br></th>
+
+<th  scope="col">D. en C. Herrera Morales José Roman<br>
+rherrera@ucol.mx<br><br></th>
+
+<th  scope="col">	M. en C. Mayoral Baldivia Margarita<br>
+mglenda@ucol.mx<br><br></th>
+
+
+</tr>
+    <tr>
+
+
+
+
+<th  scope="col">D. en C. Montesinos López Osval Antonio <br>
+oamontes1@ucol.mx<br><br></th>
+
+
+<th  scope="col">D. en C. Ramírez Alcaraz Juan Manuel<br>
+jmramir@ucol.mx<br><br></th>
+
+
+<th  scope="col">D. en C. Ramos Michel Erika Margarita<br>
+ramem@ucol.mx<br><br></th>
+
+
+<th  scope="col">M. en C. Sandoval Carrillo Sara<br>
+sary@ucol.mx<br><br></th>
+    
+
+
+</tr>
+  </thead>
+ </table>
+</center>
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+.menu-inicio {color: #fff;margin: 2px 0 0 0; padding: 0;margin-top: 10px; background: #4C0B5F; display: block; border-radius: 4px; transition: all 0.5s ease;font-size: 15px; padding: 20px 0 10px 10px; border-radius: 4px; }
+.menu-inicio a{color: #fff;}
+.menu_body {width:90%;display:none;}
+.menu_body a{background: #7CC6FA; display: block; padding: 10px 0 10px 10px; font-size: 15px; outline: 0; border-radius: 4px; line-height: 26px;color: #fff;}
+.menu_body a:hover{
+background: #057ED5; color: #fff; ; display: block; border-radius: 4px;}
+</style>
+
+<div class="menu" id="amor">
+<center><p class="menu-inicio">Profesores por horas</a></p></center>
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="1"  scope="col"> M. en C. Aguilar Arias Angélica María<br>
+angye@ucol.mx<br></th>
+
+
+<th scope="col">  M. en C. Alcaraz Amador Martha Cristina<br>
+malcaraz@ucol.mx<br><br></th>
+
+
+<th scope="col">Amezcua Luján Martha Karina<br>
+kariamezcua@hotmail.com  <br><br></th>
+
+
+<th scope="col"> D. en C. Amezcua Valdovinos Ismael<br>
+ismaelamezcua@ucol.mx <br><br></th>
+
+
+</tr>
+    <tr>
+
+
+<th scope="col">Licda. Andrade Castillo Martha Elba<br> 
+came_16@hotmail.com  <br><br></th>
+
+
+<th scope="col">  Licda. Araiza Cañedo Maribel <br>
+maribel_araiza@ucol.mx<br><br></th>
+
+
+<th scope="col"> Ávalos Corona Luis Miguel <br><br></th>
+
+
+<th scope="col">   Licda. Avalos Diaz Julia Karina<br>
+julliekarina@gmail.com<br><br></th>
+    
+
+
+</tr>
+  </thead>
+ <tr>
+<th  colspan="1" scope="col"> Bañuelos López Luis Antonio<br><br></th>
+
+<th scope="col">Ing. Bricio Chapula Carlos Adrian <br>
+cbricio@ucol.mx  <br><br></th>
+
+<th scope="col"> M. en C. Bricio Chapula Enrique <br>
+enrique_bricio@ucol.mx <br><br></th>
+
+<th scope="col">  M. en A. Camorlinga Camacho Sofía Magally<br> 
+soficc27@gmail.com<br><br></th>
+
+
+    </tr>
+</table>
+</center>
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="1"  scope="col">Campos González Edgar Guadalupe  <br></th>
+
+
+<th scope="col">  M. en C.Cárdenas Villa Gerardo Emmanuel <br>
+gvilla@ucol.mx<br><br></th>
+
+
+<th scope="col">M. en A. Carrillo Hidalgo Joaquín <br>
+joaquinka@ucol.mx  <br><br></th>
+
+
+<th scope="col">  Castillo Vega Jesús Eduardo<br><br></th>
+
+
+
+
+
+</tr>
+    <tr>
+
+<th scope="col"> Cobián Alvarado Mónica <br>
+mcobian@ucol.mx <br><br></th>
+
+<th scope="col">Cortes Lugo Hugo <br>
+hugolugo@ucol.mx  <br><br></th>
+
+<th scope="col">  Escalera Pérez Hernán Adalid<br><br></th>
+
+<th scope="col"> M. en C. Flores Flores Eduardo <br>
+eflores@ucol.mx <br><br></th>
+
+</tr>
+  </thead>
+ <tr>
+<th  colspan="1" scope="col"> M. en C. Gaspar Cruz Carlos Fidel <br>
+carlos.gaspar@ucol.mx <br><br></th>
+
+<th scope="col">MTI. Gomez Galvan Mayela Haidee <br>
+mayela_gomez@ucol.mx  <br><br></th>
+
+<th scope="col">MTI. González Arellano María Estela  <br><br></th>
+
+<th scope="col">  Govea Valencia Georgina<br><br></th>
+
+    </tr>
+</table>
+</center>
+
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+<th colspan="1"  scope="col">  MTI. Guzman Benavides Krishna Neith<br>
+krishna@ucol.mx<br></th>
+
+<th scope="col">Lepe Salazar Francisco Iván  <br><br></th>
+
+<th scope="col">  Ing. Manzanilla Aznarez Jorge Gerardo<br><br></th>
+
+<th scope="col"> Medina Sandoval Víctor Hugo  <br><br></th>
+
+</tr>
+    <tr>
+
+<th scope="col">Licda. Mercado Maciel Alejandra Margarita <br>
+mercado.alejandra@gmail.com  <br><br></th>
+
+
+<th scope="col">M. en C. Moctezuma Hernández José <br>
+jmocte@ucol.mx  <br><br></th>
+
+<th scope="col"> Moreno Osegueda Raymundo <br><br></th>
+
+<th scope="col">  Nava Bautista Martha Xóchitl<br><br></th>
+
+</tr>
+  </thead>
+ <tr>
+
+<th  colspan="1" scope="col">  Peralta Araiza Ana Conceza<br><br></th>
+
+<th scope="col">  Pozas Zepeda Darío<br><br></th>
+
+<th scope="col">Ramírez González Humberto  <br><br></th>
+
+<th scope="col">Ramírez Morfín José Nabor <br><br></th>
+
+    </tr><tr>
+<th  colspan="1" scope="col">Ramírez Sánchez Claudia<br><br></th>
+
+<th scope="col">Ramos Madrigal Abel  <br><br></th>
+
+<th scope="col">Rangel Alcántar Érick<br><br></th>
+
+<th scope="col">Rodríguez Ortiz Miguel Ángel  <br><br></th>
+
+    </tr>
+</table>
+</center>
+
+
+
+
+<br><br><br><br>  
+
+<footer>
+        <div class='define'>
+            <p>© 2017 Facultad de Telemática. All Rights Reserved.</p>
+<p>Av. Universidad #333. Colonia Las Víboras.   </p>
+<p>Tel y Fax +52 (312) 316-10-75</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+</html>	

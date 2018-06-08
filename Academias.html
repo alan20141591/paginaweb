@@ -1,0 +1,372 @@
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height:100%;
+        }
+        #wrapper {
+            min-height:100%;
+        }
+        header {
+            display:block;
+            background:#4C0B5F;
+            padding:10px 0px;
+        }
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 60px;
+            padding-top:30px;
+        }
+        footer {
+            position: relative;
+            margin-top: -50px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 50px; 
+            padding:5px 0px;
+            clear: both;
+            background: #4C0B5F;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .define {
+            width:960px;
+            margin:0 auto;
+        }
+    </style>
+
+
+<style type="text/css">
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+  height: 2px;
+  width: 90%;
+  background-color: #4C0B5F;
+}
+#menu {
+    width: 90%;
+    margin: 40px auto;
+    border: 1px solid #222;
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 10px 10px #777;
+}
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu {
+    zoom:1;
+}
+#menu li {
+    float: left;
+    border-right: 1px solid #4C0B5F;
+    box-shadow: 1px 0 0 #4C0B5F;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #4C0B5F;
+}
+
+#menu li:hover > a {
+    color: #fafafa;
+}
+
+*html #menu li a:hover { /* IE6 only */
+    color: #4C0B5F;
+
+}#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #4C0B5F;   
+    background: linear-gradient(#4C0B5F, #4C0B5F);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+
+#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul ul li:first-child a:hover:after {
+    border-right-color: #4C0B5F; 
+    border-bottom-color: transparent;   
+}
+
+#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+	</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html> 
+<body>
+<ul id="menu">
+    <li><a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Inicio</a></li>
+    <li>
+        <a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Facultad de Telematica</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Historia.html">Historia</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Contacto.html">Contacto</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Personaladministrativo.html">Personal administrativo</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Reglamentolaboratorio.html">Reglamento Laboratorio</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Infraestructura.html">Infraestructura</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Oferta educativa</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Bienvenida.html">Bienvenida</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingsoftware.html">Ing. Software</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingtelematica.html">Ing. Telematica</a></li>
+        </ul></li>
+    <li><a href="#">Academico</a><ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Docentes.html">Docentes</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Academias.html">Academias</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Cuerposacademicos.html">Cuerpos academicos</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Programadetutoria.html">Programa de tutoria</a></li>
+        </ul></li>
+    <li><a href="#">Rendicion de cuentas</a>
+         <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Informesdelabores.html">Informes de labores</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Pide.html">Pide-2018-2021</a></li>
+        </ul>
+    </li>
+    <li><a href="http://telematicanet.ucol.mx/egresados/">Asociacion de Egresados</a></li>
+</ul>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<div itemprop="articleBody">
+		<table class="table table-hover" style="width: 100%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr><th colspan="3" style="text-align: center; color: #ffffff; background: #4C0B5F;">Ingeniero en Telemática</th></tr>
+<tr><th>ACADEMIA</th><th>UNIDADES DE APRENDIZAJE</th><th>SEMESTRE</th></tr>
+<tr>
+<td>Ciencias Básicas</td>
+<td>&nbsp; Física<br /> &nbsp; Matemáticas para Ingeniería<br /> &nbsp; Cálculo Diferencial e Integral<br /> &nbsp; Electricidad y Magnetismo<br /> &nbsp; Probabilidad y Métodos Estadísticos<br /> &nbsp; Métodos Numéricos<br /> &nbsp; Ecuaciones Diferenciales<br /> &nbsp; Análisis de Señales<br><br></td>
+<td>1°<br /> 1°<br />2°<br /> 3°<br /> 3°<br /> 4°<br /> 4°<br /> 5°<br><br></td>
+</tr>
+<tr>
+<td>&nbsp;Redes y Telecomunicaciones</td>
+<td>&nbsp; Redes de Datos<br /> &nbsp; Enrutamiento Básico<br /> &nbsp; Enrutamiento WAN y Conmutación<br /> &nbsp; Sistemas Operativos y Servicios de Internet<br /> &nbsp; Comunicaciones Digitales<br /> &nbsp; Comunicaciones Ópticas<br /> &nbsp; Comunicaciones Móviles y Satelitales<br /> &nbsp; Administración y Seguridad de Redes<br /> &nbsp; Redes Inalámbricas de Sensores<br /> &nbsp; Simulación y Calidad de Servicio<br><br></td>
+<td>1°<br /> 2°<br /> 3°<br /> 4°<br /> 5°<br /> 6°<br /> 6°<br /> 6°<br /> 7°<br /> 7°<br><br></td>
+</tr>
+<tr>
+<td>Arquitectura de Computadoras</td>
+<td>&nbsp; Arquitectura de Computadoras<br />&nbsp; Electrónica Digital<br /> &nbsp; Sistemas embebidos<br /> &nbsp; Robótica<br><br></td>
+<td>1°<br /> 2°<br /> 2°<br /> 4°<br><br></td>
+</tr>
+<tr>
+<td>Software</td>
+<td>&nbsp; Herramientas de Programación<br /> &nbsp; Estructuras y Bases de Datos<br /> &nbsp; Programación<br /> &nbsp; Programación Visual<br /> &nbsp; Programación para Web<br /> &nbsp; Ingeniería de Software<br /> &nbsp; Bases de Datos Distribuidas<br><br></td>
+<td>1°<br /> 2°<br /> 3°<br /> 4°<br /> 5°<br /> 5°<br /> 6°<br><br></td>
+</tr>
+<tr>
+<td>&nbsp;Entorno Social</td>
+<td>&nbsp; Ética y Comportamiento en las Organizaciones<br /> &nbsp; Derecho Informático<br /> &nbsp; Formulación de Proyectos<br /> &nbsp; Evaluación de Proyectos<br /> &nbsp; Dirección de Proyectos<br><br></td>
+<td>1°<br /> 2°<br /> 3°<br /> 5°<br /> 6°<br><br></td>
+</tr>
+<tr>
+<td>Introducción a la Investigación</td>
+<td>&nbsp; Seminario de Investigación I<br /> &nbsp; Seminario de Investigación II<br><br></td>
+<td>6°<br /> 7°<br><br></td>
+</tr>
+<tr>
+<td>&nbsp;Lengua Inglesa</td>
+<td>&nbsp; Pre-Intermediate General English<br /> &nbsp; Intermediate General English<br /> &nbsp; Intermediate English for Computer Users<br /> &nbsp; Upper-Intermediate English for Computer Users&nbsp;<br /> &nbsp; Advanced English for Computer Users<br /> &nbsp; English for Research<br /> &nbsp; Occupational English<br><br></td>
+<td>1°<br /> 2°<br /> 3°<br /> 4°<br /> 5°<br /> 6°<br /> 7°<br><br></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table class="table table-hover" style="width: 100%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr><th colspan="3" style="text-align: center; color: #ffffff; background: #4C0B5F;">Ingeniero de Software</th></tr>
+<tr><th>ACADEMIA</th><th>UNIDADES DE APRENDIZAJE</th><th>SEMESTRE</th></tr>
+<tr>
+<td>Ciencias Básicas</td>
+<td>&nbsp; Física<br /> &nbsp; Matemáticas Básicas<br /> &nbsp; Cálculos<br /> &nbsp; Probabilidad<br /> &nbsp; Matemáticas Discretas<br /> &nbsp; Métodos Estadísticos<br /> &nbsp; Métodos Numéricos<br /> &nbsp; Simulación e Investigación de Operaciones<br><br></td>
+<td>1°<br /> 1°<br /> 2°<br /> 3°<br /> 3°<br /> 4°<br /> 5°<br /> 6°<br><br></td>
+</tr>
+<tr>
+<td>Software</td>
+<td>&nbsp; Ofimática<br /> &nbsp; Lenguajes Algorítmicos<br /> &nbsp; Análisis y Modelado de Software<br /> &nbsp; Programación Orientada a Objetos<br /> &nbsp; Sistemas de Información<br /> &nbsp; Diseño de Software<br /> &nbsp; Administración de Proyectos de Software<br /> &nbsp; Programación Visual<br /> &nbsp; Estructuras de Datos<br /> &nbsp; Programación Distribuida<br /> &nbsp; Bases de Datos<br /> &nbsp; Interacción Humano-Computadora<br /> &nbsp; Programación en Internet<br /> &nbsp; Testeo y Métodos de Usabilidad<br /> &nbsp; Bases de Datos Distribuidas<br /> &nbsp; Sistemas de Hipermedia<br /> &nbsp; Mantenimiento de Software<br /> &nbsp; Programación de Dispositivos Móviles<br><br></td>
+<td>1°<br /> 1°<br /> 1°<br /> 2°<br /> 2°<br /> 2°<br /> 3°<br /> 3°<br /> 4°<br /> 5°<br /> 5°<br /> 5°<br /> 6°<br /> 6°<br /> 6°<br /> 7°<br /> 7°<br /> 7°<br><br></td>
+</tr>
+<tr>
+<td>Arquitectura de Computadoras</td>
+<td>&nbsp; Sistemas Digitales<br /> &nbsp; Arquitectura de Computadoras<br /> &nbsp; Sistemas embebidos<br><br></td>
+<td>1°<br /> 2°<br /> 4°<br><br></td>
+</tr>
+<tr>
+<td>Redes</td>
+<td>&nbsp; Redes de Computadoras<br /> &nbsp; Sistemas Operativos y Servicios de Internet&nbsp;<br /> &nbsp; Seguridad de Datos<br><br></td>
+<td>2°<br /> 4°<br /> 7°<br><br></td>
+</tr>
+<tr>
+<td>&nbsp;Entorno Social</td>
+<td>&nbsp; Formulación de Proyectos<br /> &nbsp; Evaluación de Proyectos<br /> &nbsp; Ética y Comportamiento en las Organizaciones&nbsp;<br /> &nbsp; Dirección de Proyectos<br /> &nbsp; Derecho Informático<br><br></td>
+<td>3°<br /> 4°<br /> 4°<br /> 5°<br /> 5°<br><br></td>
+</tr>
+<tr>
+<td>Introducción a la Investigación</td>
+<td>&nbsp; Seminario de Investigación I<br /> &nbsp; Seminario de Investigación II<br><br></td>
+<td>6°<br /> 7°<br><br></td>
+</tr>
+<tr>
+<td>&nbsp;Lengua Inglesa</td>
+<td>&nbsp; Pre-Intermediate General English<br /> &nbsp; Intermediate General English<br /> &nbsp; Intermediate English for Computer Users<br /> &nbsp; Upper-Intermediate English for Computer Users<br /> &nbsp; Advanced English for Computer Users<br /> &nbsp; English for Research<br /> &nbsp; Occupational English<br><br></td>
+<td>1°<br /> 2°<br /> 3°<br /> 4°<br /> 5°<br /> 6°<br /> 7°<br><br></td>
+</tr>
+</tbody>
+</table>	</div>
+
+
+
+<br><br><br><br>  
+
+<footer>
+        <div class='define'>
+            <p>© 2017 Facultad de Telemática. All Rights Reserved.</p>
+<p>Av. Universidad #333. Colonia Las Víboras.   </p>
+<p>Tel y Fax +52 (312) 316-10-75</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

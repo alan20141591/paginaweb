@@ -1,0 +1,424 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height:100%;
+        }
+        #wrapper {
+            min-height:100%;
+        }
+        header {
+            display:block;
+            background:#4C0B5F;
+            padding:10px 0px;
+        }
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 60px;
+            padding-top:30px;
+        }
+        footer {
+            position: relative;
+            margin-top: -50px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 50px; 
+            padding:5px 0px;
+            clear: both;
+            background: #4C0B5F;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .define {
+            width:960px;
+            margin:0 auto;
+        }
+    </style>
+
+
+<style type="text/css">
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+  height: 10px;
+  width: 90%;
+  background-color: #4C0B5F;
+}
+#menu {
+    width: 90%;
+    margin: 40px auto;
+    border: 1px solid #222;
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 10px 10px #777;
+}
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu {
+    zoom:1;
+}
+#menu li {
+    float: left;
+    border-right: 1px solid #4C0B5F;
+    box-shadow: 1px 0 0 #4C0B5F;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #4C0B5F;
+}
+
+#menu li:hover > a {
+    color: #fafafa;
+}
+
+*html #menu li a:hover { /* IE6 only */
+    color: #4C0B5F;
+
+}#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #4C0B5F;   
+    background: linear-gradient(#4C0B5F, #4C0B5F);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+
+#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul ul li:first-child a:hover:after {
+    border-right-color: #4C0B5F; 
+    border-bottom-color: transparent;   
+}
+
+#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+	</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html> 
+<body>
+<ul id="menu">
+    <li><a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Inicio</a></li>
+    <li>
+        <a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Facultad de Telematica</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Historia.html">Historia</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Contacto.html">Contacto</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Personaladministrativo.html">Personal administrativo</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Reglamentolaboratorio.html">Reglamento Laboratorio</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Infraestructura.html">Infraestructura</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Oferta educativa</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Bienvenida.html">Bienvenida</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingsoftware.html">Ing. Software</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingtelematica.html">Ing. Telematica</a></li>
+        </ul></li>
+    <li><a href="#">Academico</a><ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Docentes.html">Docentes</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Academias.html">Academias</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Cuerposacademicos.html">Cuerpos academicos</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Programadetutoria.html">Programa de tutoria</a></li>
+        </ul></li>
+    <li><a href="#">Rendicion de cuentas</a>
+         <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Informesdelabores.html">Informes de labores</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Pide.html">Pide-2018-2021</a></li>
+        </ul>
+    </li>
+    <li><a href="http://telematicanet.ucol.mx/egresados/">Asociacion de Egresados</a></li>
+</ul>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<FONT FACE="impact" SIZE=6 COLOR=#64FE2E>
+ Ingenieria en Software</FONT>
+<hr>
+
+
+
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Perfil del Egresado</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+El Ingeniero de Software posee competencias genéricas y específicas para diseñar la arquitectura y detallar las especificaciones de funcionamiento de los sistemas de software en organizaciones nacionales e internacionales, conoce la naturaleza y propiedades de los distintos lenguajes de programación, realiza la implementación del software mediante el uso de las diferentes metodologías y paradigmas del ciclo de vida y, realiza los distintos tipos de mantenimiento en sistemas de software de manufactura, considerando las características del hardware y sistemas embebidos. Además, realiza proyectos de desarrollo tecnológico para la solución de problemas de manera flexible y creativa. Actúa con ética profesional y responsabilidad social desempeñándose con liderazgo, espíritu crítico, emprendedor e innovador.
+</p>
+
+
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Competencias a desarrollar</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+– Dirigir y coordinar proyectos de desarrollo y mantenimiento de software.<br>
+– Supervisar las etapas de la vida de un proyecto de desarrollo de software.<br>
+– Dirigir equipos de trabajo compuestos por analistas, diseñadores y programadores.<br>
+– Analizar y seleccionar nuevas técnicas y herramientas existentes en el mercado tecnológico y del software.<br>
+– Analizar y diseñar aplicaciones de software.<br>
+– Realizar pruebas de verificación, integración y rendimiento de las aplicaciones de software.<br>
+– Integrar sistemas existentes susceptibles de interrelacionarse.<br>
+– Brindar asesoría a usuarios en la resolución de problemas relacionados con los sistemas de software.<br>
+– Realizar consultoría individual o en colaboración con otros profesionistas.<br>
+– Administrar sistemas de bases de datos.<br>
+– Participar en formular políticas de seguridad y técnicas criptográficas en empresas e instituciones donde se desempeñe.<br>
+– Verificar que el software desarrollado cumpla con la legislación en vigor.<br>
+</p>
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Campo de Trabajo</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+– Empresas integradoras de tecnologías.<br>
+– Sector público y privado, en áreas de informática y sistemas.<br>
+– Fábricas y Casas de software.<br>
+– Despachos particulares y multiprofesionales.<br>
+– Ejercicio libre de la profesión.<br>
+</p>
+
+
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Características deseables del Aspirante</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+– Habilidad para las matemáticas y la programación.<br>
+– Capacidad para solucionar problemas basados en deducciones lógicas.<br>
+– Aptitud para trabajar en equipo.<br>
+– Habilidad para la investigación y el autoaprendizaje.<br>
+</p>
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Estudios Previos</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+
+Bachillerato terminado, preferentemente en las áreas de técnico analista programador, técnico en computación o su equivalente.
+</p>
+
+
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Requisitos de Ingreso</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Atender el proceso de admisión vigente señalado en la Convocatoria oficial para la Educación Superior.
+</p>
+
+
+
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Requisitos de Egreso</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+– Aprobar la totalidad del plan de estudios, acreditar las actividades culturales y deportivas, y el servicio social universitario.<br>
+– Acreditar la Práctica Profesional y el Servicio Social Constitucional, de acuerdo con el Reglamento Escolar de Educación Superior.<br>
+–Presentar el Examen General para el Egreso de la Licenciatura (egel-ceneval).<br>
+– Cumplir con los requisitos de documentación administrativa necesarios.<br>
+</p>
+
+
+
+
+
+<FONT FACE="arial" SIZE=4 COLOR=#4C0B5F>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+Duración de la Carrera</FONT><br>
+
+<FONT FACE="arial" SIZE=3 COLOR=#2F0B3A>
+<p style="text-align: justify; padding-left: 70px; padding-right: 70px">
+8 semestres.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>  
+
+<footer>
+        <div class='define'>
+            <p>© 2017 Facultad de Telemática. All Rights Reserved.</p>
+<p>Av. Universidad #333. Colonia Las Víboras.   </p>
+<p>Tel y Fax +52 (312) 316-10-75</p>
+        </div>
+    </footer>
+
+
+</html>

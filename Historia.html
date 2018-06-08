@@ -1,0 +1,286 @@
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height:100%;
+        }
+        #wrapper {
+            min-height:100%;
+        }
+        header {
+            display:block;
+            background:#4C0B5F;
+            padding:10px 0px;
+        }
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 60px;
+            padding-top:30px;
+        }
+        footer {
+            position: relative;
+            margin-top: -50px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 50px; 
+            padding:5px 0px;
+            clear: both;
+            background: #4C0B5F;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .define {
+            width:960px;
+            margin:0 auto;
+        }
+    </style>
+
+
+<style type="text/css">
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+hr {
+  height: 10px;
+  width: 100%;
+  background-color: #4C0B5F;
+}
+
+
+#menu {
+    width: 90%;
+    margin: 40px auto;
+    border: 1px solid #222;
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 10px 10px #777;
+}
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu {
+    zoom:1;
+}
+#menu li {
+    float: left;
+    border-right: 1px solid #4C0B5F;
+    box-shadow: 1px 0 0 #4C0B5F;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #4C0B5F;
+}
+
+#menu li:hover > a {
+    color: #fafafa;
+}
+
+*html #menu li a:hover { /* IE6 only */
+    color: #4C0B5F;
+
+}#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #4C0B5F;   
+    background: linear-gradient(#4C0B5F, #4C0B5F);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+
+#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul ul li:first-child a:hover:after {
+    border-right-color: #4C0B5F; 
+    border-bottom-color: transparent;   
+}
+
+#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+	</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html> 
+<body>
+<ul id="menu">
+    <li><a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Inicio</a></li>
+    <li>
+        <a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Facultad de Telematica</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Historia.html">Historia</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Contacto.html">Contacto</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Personaladministrativo.html">Personal administrativo</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Reglamentolaboratorio.html">Reglamento Laboratorio</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Infraestructura.html">Infraestructura</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Oferta educativa</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Bienvenida.html">Bienvenida</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingsoftware.html">Ing. Software</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingtelematica.html">Ing. Telematica</a></li>
+        </ul></li>
+    <li><a href="#">Academico</a><ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Docentes.html">Docentes</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Academias.html">Academias</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Cuerposacademicos.html">Cuerpos academicos</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Programadetutoria.html">Programa de tutoria</a></li>
+        </ul></li>
+    <li><a href="#">Rendicion de cuentas</a>
+         <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Informesdelabores.html">Informes de labores</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Pide.html">Pide-2018-2021</a></li>
+        </ul>
+    </li>
+    <li><a href="http://telematicanet.ucol.mx/egresados/">Asociacion de Egresados</a></li>
+</ul>
+
+
+
+
+
+
+
+<FONT FACE="impact" SIZE=6 COLOR=#64FE2E>
+HISTORIA</FONT>
+
+<hr>
+
+<br><img src="fondo.jpg" width:"300";height:"300";>    <img src="mini1.jpg" width="300" ;height:"300";>   <img src="mini2.jpg" width="300" ;height:"300";>   <img src="mini3.jpg" width="300" ;height:"300";>
+<br><br>
+<HR>
+
+
+<h4>
+<FONT FACE="ARIAL">El inicio al impulso de las carreras de Informática-Computación en la Universidad de Colima, se dio en la facultad de Ingeniería Mecánica y Eléctrica, en el campus Coquimatlán con la carrera de Ingeniero en Sistemas Computacionales, y en las escuelas y facultades de Contabilidad y Administración del Estado, con la carrera de Licenciado en Informática.<br><br>
+Uno de los antecedentes de la actual Facultad de Telemática, que se encuentra ubicada en el campus Colima, fue la carrera de Licenciado en Informática que inició en Agosto de 1990 como respuesta a la necesidad detectada en el Estado de satisfacer la demanda de profesionistas que implementaran sistemas de información, utilizando nuevas tecnologías computacionales.<br><br>
+La Facultad de Telemática fue creada el 2 de agosto de 1996 para ofrecer a la comunidad estudiantil las carreras de Licenciado en Informática, Ingeniería y Maestría en Telemática, como estrategia Institucional para consolidar académicamente el desarrollo de la aplicación de las nuevas tecnologías de Información, Informática y Telecomunicaciones, en el campus Colima.<br><br>
+La Facultad de Telemática surgió también en el campus Colima para aprovechar la experiencia de la Universidad en la aplicación y uso de recursos informáticos del Centro Nacional de Edición Digital y Desarrollo de Tecnologías de Información (CENEDIC), de la Biblioteca de las Ciencias y del Centro Universitario Productor de Medios Didácticos (CEUPROMED) e impulsar la carrera de Licenciado en Informática que ofrecía anteriormente la Facultad de Contabilidad y Administración.<br><br>
+El campus Colima fue una de las primeras áreas en contar con su propia red de comunicaciones intra e intercampus, además de comunicación internacional, caracterizada por emplear tecnología de frontera, tanto a nivel de redes locales de datos (redes tipo Ehternet a 100 mbps), dorsal basada en fibra óptica (FDDI), dispositivos de interconexión (enrutadores inteligentes), y diversos medios físicos de comunicaciones.<br><br>
+El aprovechamiento de la infraestructura de redes y facilitar una administración centralizada, fueron otras de las razones para establecer la Facultad de Telemática en el campus Colima y aprovechar así el CENEDIC, la Biblioteca de las Ciencias, el departamento de redes y el CEUPROMED, como laboratorios naturales para sus estudiantes.<br><br>
+Desde sus inicios la Facultad de Telemática ha buscado la proyección internacional, ya que aspira a contar con estudiantes con preparación de nivel mundial en tecnologías computacionales, por ello se han realizado intercambios de estudiantes y profesores con instituciones de Estados Unidos, Canadá, Inglaterra y España, entre otros. Para reforzar la preparación en inglés se cuenta con un Centro de Autoacceso a Lenguas en el campus principal de la Universidad de Colima.<br><br>
+El hecho de contar con un sistema moderno de comunicaciones e infraestructura en informática, telemática e inglés, es una base y un aliciente para mejorar los planes de estudios de la Facultad y así fomentar la investigación y la docencia en esta disciplina, que está teniendo un gran desarrollo por la extensiva utilización de Internet y por las necesidades de modernización que enfrentan las empresas e instituciones de la región.<br>
+</h4></FONT>
+<br><br><br>
+
+<footer>
+        <div class='define'>
+            <p>© 2017 Facultad de Telemática. All Rights Reserved.</p>
+<p>Av. Universidad #333. Colonia Las Víboras.   </p>
+<p>Tel y Fax +52 (312) 316-10-75</p>
+        </div>
+    </footer>
+</body>
+</html>
+	

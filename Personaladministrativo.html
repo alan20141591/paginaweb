@@ -1,0 +1,558 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height:100%;
+        }
+        #wrapper {
+            min-height:100%;
+        }
+        header {
+            display:block;
+            background:#4C0B5F;
+            padding:10px 0px;
+        }
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 60px;
+            padding-top:30px;
+        }
+        footer {
+            position: relative;
+            margin-top: -50px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 50px; 
+            padding:5px 0px;
+            clear: both;
+            background: #4C0B5F;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .define {
+            width:960px;
+            margin:0 auto;
+        }
+    </style>
+
+
+
+	<style type="text/css">
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+hr {
+  height: 10px;
+  width: 90%;
+  background-color: #4C0B5F;
+}
+#menu {
+    width: 90%;
+    margin: 40px auto;
+    border: 1px solid #222;
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 10px 10px #777;
+}
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+#menu:after {
+    clear: both;
+}
+#menu {
+    zoom:1;
+}
+#menu li {
+    float: left;
+    border-right: 1px solid #4C0B5F;
+    box-shadow: 1px 0 0 #4C0B5F;
+    position: relative;
+}
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #4C0B5F;
+}
+#menu li:hover > a {
+    color: #fafafa;
+}
+*html #menu li a:hover { /* IE6 only */
+    color: #4C0B5F;
+}#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #4C0B5F;   
+    background: linear-gradient(#4C0B5F, #4C0B5F);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+#menu ul li:last-child {   
+    box-shadow: none;    
+}
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+#menu ul a:hover {
+    background-color: #4C0B5F;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+#menu ul ul li:first-child a:hover:after {
+    border-right-color: #4C0B5F; 
+    border-bottom-color: transparent;   
+}
+#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+	</style>
+</head>
+
+
+
+
+
+
+<html> 
+<body>
+<ul id="menu">
+    <li><a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Inicio</a></li>
+    <li>
+        <a href="http://bach23alan20141591.eshost.com.ar/facultaddetelematica.html">Facultad de Telematica</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Historia.html">Historia</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Contacto.html">Contacto</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Personaladministrativo.html">Personal administrativo</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Reglamentolaboratorio.html">Reglamento Laboratorio</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Infraestructura.html">Infraestructura</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Oferta educativa</a>
+        <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Bienvenida.html">Bienvenida</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingsoftware.html">Ing. Software</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Ingtelematica.html">Ing. Telematica</a></li>
+        </ul></li>
+    <li><a href="#">Academico</a><ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Docentes.html">Docentes</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Academias.html">Academias</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Cuerposacademicos.html">Cuerpos academicos</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Programadetutoria.html">Programa de tutoria</a></li>
+        </ul></li>
+    <li><a href="#">Rendicion de cuentas</a>
+         <ul>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Informesdelabores.html">Informes de labores</a></li>
+            <li><a href="http://bach23alan20141591.eshost.com.ar/Pide.html">Pide-2018-2021</a></li>
+        </ul>
+    </li>
+    <li><a href="http://telematicanet.ucol.mx/egresados/">Asociacion de Egresados</a></li>
+</ul>
+</body>
+<br><br><br>
+
+
+<style type="text/css">
+ 
+.menu-inicio {color: #fff;margin: 2px 0 0 0; padding: 0;margin-top: 10px; background: #4C0B5F; display: block; border-radius: 4px; transition: all 0.5s ease;font-size: 15px; padding: 20px 0 10px 10px; border-radius: 4px; }
+.menu-inicio a{color: #fff;}
+.menu_body {width:90%;display:none;}
+.menu_body a{background: #7CC6FA; display: block; padding: 10px 0 10px 10px; font-size: 15px; outline: 0; border-radius: 4px; line-height: 26px;color: #fff;}
+.menu_body a:hover{
+background: #057ED5; color: #fff; ; display: block; border-radius: 4px;}
+</style>
+
+<div class="menu" id="amor">
+<center><p class="menu-inicio">Direccion</a></p></center>
+
+
+
+
+<br><br><br>
+
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="4"  scope="col">M. en C. Sara Sandoval Carrillo<br>
+Directora de la Facultad<br>
+sary@ucol.mx<br>
+ext 37800<br></th>
+</tr>
+    <tr>
+
+
+<th scope="col">Dr. Ed. Antonio Ordaz Carrillo<br>
+Coordinador Académico de la carrera Ingeniería en Software <br>
+aordaz@ucol.mx<br>
+ext 37804<br><br></th>
+
+
+
+<th  scope="col">M.C. Aaron Vázquez Godina<br>
+Coordinador Académico de la carrera Ingeniería en Telemática<br>
+laaaron@ucol.mx<br>
+ext. 37805<br><br></th>
+      
+
+
+<th scope="col">Dr. Raúl Teodoro Aquino Santos<br>
+Coordinador de Posgrado<br>
+aquinor@ucol.mx<br><br></th>
+
+
+
+<th  scope="col">C.P. Rosa María Ponce Barajas<br>
+Secretaria Administrativa<br>
+rponce@ucol.mx<br>
+ext 37803<br><br></th>
+    
+
+
+</tr>
+  </thead>
+ <tr>
+<th  colspan="1" scope="col">Lic. Alma Refugio Dávila Preciado<br>
+Asesora Pedagógica<br>
+adavila@ucol.mx<br><br></th>
+
+
+
+<th  scope="col">Lic. Mónica Georgina García Valle<br>
+Orientadora Educativa<br>
+monica_garcia@ucol.mx<br><br></th>
+
+    </tr>
+</table>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+.menu-inicio {color: #fff;margin: 2px 0 0 0; padding: 0;margin-top: 10px; background: #4C0B5F; display: block; border-radius: 4px; transition: all 0.5s ease;font-size: 15px; padding: 20px 0 10px 10px; border-radius: 4px; }
+.menu-inicio a{color: #fff;}
+.menu_body {width:90%;display:none;}
+.menu_body a{background: #7CC6FA; display: block; padding: 10px 0 10px 10px; font-size: 15px; outline: 0; border-radius: 4px; line-height: 26px;color: #fff;}
+.menu_body a:hover{
+background: #057ED5; color: #fff; ; display: block; border-radius: 4px;}
+</style>
+
+<div class="menu" id="amor">
+<center><p class="menu-inicio">Comisiones</a></p></center>
+
+
+
+
+<br><br><br>
+
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="1"  scope="col">D. en C. María Andrade Aréchiga<br>
+Responsable del servicio social constitucional<br>
+mandrad@ucol.mx<br></th>
+
+
+<th scope="col">D. en C. María Eugenia Cabello Espinosa<br>
+Responsable del servicio social universitario<br>
+ecabello@ucol.mx<br><br></th>
+
+
+<th scope="col">M. en C. Margarita Glenda Mayoral Baldivia<br>
+Responsable de práctica, estancia profesional, EGEL<br>
+mglenda@ucol.mx<br><br></th>
+
+
+<th scope="col">D. en C. Pedro Damián Reyes<br>
+Responsable de educación continua<br>
+damian@ucol.mx<br><br></th>
+
+
+</tr>
+    <tr>
+
+
+<th scope="col">D. en C. Jorge Rafael Gutiérrez Pulido<br>
+Responsable de seguimiento de egresados<br>
+jrgp@ucol.mx<br><br></th>
+
+
+
+<th  scope="col">D. en C. Juan Antonio Guerrero Ibáñez<br>
+Responsable del programa de becas<br>
+antonio_guerrero@ucol.mx<br><br></th>
+      
+
+
+<th scope="col">D. en C. Buenrostro Mariscal Raymundo<br>
+Responsable de becas de manutención<br>
+raymundo@ucol.mx<br><br></th>
+
+
+
+<th  scope="col">D. Ed. Antonio Ordaz Carrillo<br>
+Responsable de Exani II, becas de excelencia,<br>
+aordaz@ucol.mx<br><br></th>
+    
+
+
+</tr>
+  </thead>
+ <tr>
+<th  colspan="1" scope="col">M. en C. Gaspar Cruz Carlos Fidel<br>
+Responsable de certificación ISO 9000<br>
+carlos.gaspar@ucol.mx<br><br></th>
+
+
+
+<th  scope="col">M. en C. Aaron Vázquez Godina <br>
+Responsable de visitas guiadas <br>
+laaaron@ucol.mx<br><br></th>
+
+
+<th  scope="col">D. en C. Erika Margarita Ramos Michel<br>
+Responsable de Tutorías <br>
+ramem@ucol.mx<br><br></th>
+
+    </tr>
+</table>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+.menu-inicio {color: #fff;margin: 2px 0 0 0; padding: 0;margin-top: 10px; background: #4C0B5F; display: block; border-radius: 4px; transition: all 0.5s ease;font-size: 15px; padding: 20px 0 10px 10px; border-radius: 4px; }
+.menu-inicio a{color: #fff;}
+.menu_body {width:90%;display:none;}
+.menu_body a{background: #7CC6FA; display: block; padding: 10px 0 10px 10px; font-size: 15px; outline: 0; border-radius: 4px; line-height: 26px;color: #fff;}
+.menu_body a:hover{
+background: #057ED5; color: #fff; ; display: block; border-radius: 4px;}
+</style>
+
+<div class="menu" id="amor">
+<center><p class="menu-inicio">Responsables de laboratorio</a></p></center>
+
+
+
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="1"  scope="col">Ing. Manzanilla Aznarez Jorge Gerardo<br>
+aznarez@ucol.mx<br></th>
+
+
+<th scope="col">M. en C. Gaspar Cruz Carlos Fidel<br>
+carlos.gaspar@ucol.mx<br><br></th>
+
+
+<th scope="col">Lic. Inf. Julio Cesar Marquez Jimenez<br>
+julioc_marquez@ucol.mx<br><br></th>
+
+</tr>
+</table>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+.menu-inicio {color: #fff;margin: 2px 0 0 0; padding: 0;margin-top: 10px; background: #4C0B5F; display: block; border-radius: 4px; transition: all 0.5s ease;font-size: 15px; padding: 20px 0 10px 10px; border-radius: 4px; }
+.menu-inicio a{color: #fff;}
+.menu_body {width:90%;display:none;}
+.menu_body a{background: #7CC6FA; display: block; padding: 10px 0 10px 10px; font-size: 15px; outline: 0; border-radius: 4px; line-height: 26px;color: #fff;}
+.menu_body a:hover{
+background: #057ED5; color: #fff; ; display: block; border-radius: 4px;}
+</style>
+
+<div class="menu" id="amor">
+<center><p class="menu-inicio">Secretarias</a></p></center>
+
+
+
+<center>
+<table summary=""cellspacing="5" cellpadding="10" border="3" >
+  <caption></caption>
+  <thead>
+    <tr>
+
+
+
+<th colspan="1"  scope="col">Aguayo Dimas Silvia Leticia<br>
+ext 37801<br></th>
+
+
+<th scope="col">Campos Llerenas Carmen Leticia<br>
+ext. 37801<br><br></th>
+
+
+<th scope="col">Chavez Trillo Luz Aida <br>
+ext 37801<br><br></th>
+
+<th scope="col">García Vázquez Itza María De J.<br>
+ext 37801<br><br></th>
+
+
+
+
+ <tr>
+
+
+<th scope="col">Juarez Garcia Ma. Mercedes<br>
+ext 37801<br><br></th></tr>
+</tr>
+
+</table>
+</center>
+
+
+
+
+
+<br><br><br><br>
+<footer>
+        <div class='define'>
+            <p>© 2017 Facultad de Telemática. All Rights Reserved.</p>
+<p>Av. Universidad #333. Colonia Las Víboras.   </p>
+<p>Tel y Fax +52 (312) 316-10-75</p>
+        </div>
+    </footer>
+
+
+
+</html>
